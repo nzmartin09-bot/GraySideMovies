@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Movie Library</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #00bfff;
+    }
+    .movie {
+      margin-bottom: 2rem;
+    }
+    video {
+      width: 90%;
+      max-width: 960px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+    }
+    a.download {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 My Movie Library</h1>
+
+  <div class="movie">
+    <h2>My 1080p Movie</h2>
+    <video controls>
+      <source src="Star.Wars.The.Clone.Wars.2008.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+      <source src="my_movie_1080p.mkv" type="video/webm">
+      Your browser doesn’t support streaming this video.
+      <br><a class="download" href="my_movie_1080p.mkv" download>Click here to download it</a>
+    </video>
+  </div>
+
+  <div class="movie">
+    <h2>My 2K Movie</h2>
+    <video controls>
+      <source src="my_movie_2k.mp4" type="video/mp4">
+      <source src="my_movie_2k.mkv" type="video/webm">
+      Your browser doesn’t support streaming this video.
+      <br><a class="download" href="my_movie_2k.mkv" download>Click here to download it</a>
+    </video>
+  </div>
+
+</body>
+</html>
